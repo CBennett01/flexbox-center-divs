@@ -8,7 +8,7 @@
 
 /* ==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
+   ========================s================================================== */
 
 html {
     color: #222;
@@ -97,40 +97,66 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
+  width: 100;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   padding: 2em;
-  font-size: 1.25em;
   height: 100%;
+  color: #fff;
+
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 1em, 0, 1em, 0;
+    color: #fff;
+    justify-content: flex-start;
+}
+p {
+    padding: 10px;
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  font-weight: 700;
+  font-weight: 400;
+  border-top: 1px solid slategray;
+  border-bottom: 1px solid slategray;
+  padding: 15px;
 
 }
+
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
-  align-items: center;
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  font-size: 1.25em;
+  height: auto;
   width: 30%;
+  padding: 10px;
+
 }
-
-
-
+.div-1, .div-2 {
+    border-right: 3px solid salmon;
+}
 
 /* ==========================================================================
    Helper classes
